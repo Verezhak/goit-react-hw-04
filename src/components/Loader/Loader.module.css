@@ -1,0 +1,9 @@
+.loader {
+    display: flex;
+    justify-content: center;
+
+    div {
+        height: 40px;
+        width: 40px;
+    }
+}
