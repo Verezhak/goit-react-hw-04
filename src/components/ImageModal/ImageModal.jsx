@@ -20,9 +20,9 @@ export const ImageModal = ({ image, onClose }) => {
                 <>
                     <img src={image.urls.regular} alt={image.alt_description} className={s.image} />
                     <div className={s.details}>
-                        <p><strong>Description:</strong> {image.description || image.alt_description}</p>
-                        <p><strong>Author:</strong> {image.user.name}</p>
-                        <p><strong>Likes:</strong> {image.likes}</p>
+                        <p><span>Description:</span> {image.description || image.alt_description}</p>
+                        <p><span>Author:</span> {image.user.name}</p>
+                        <p><span>Likes:</span> {image.likes}</p>
                     </div>
                 </>
             )}
