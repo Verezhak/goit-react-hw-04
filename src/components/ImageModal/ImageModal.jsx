@@ -12,8 +12,8 @@ export const ImageModal = ({ image, onClose }) => {
             contentLabel="Image Modal"
             className={s.modal}
             overlayClassName={s.overlay}
-            shouldCloseOnOverlayClick={true} // Додано властивість для закриття при кліку на оверлей
-            ariaHideApp={false} // Додано щоб уникнути помилки
+            shouldCloseOnOverlayClick={true}
+            ariaHideApp={false}
         >
             <button onClick={onClose} className={s.closeButton}>X</button>
             {image && (
