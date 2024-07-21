@@ -17,7 +17,6 @@ export const App = () => {
     const [error, setError] = useState(false);
     const [page, setPage] = useState(1);
     const [isLoadMore, setIsLoadMore] = useState(false);
-    // const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
 
     useEffect(() => {
@@ -54,12 +53,12 @@ export const App = () => {
 
     const handleImageClick = image => {
         setSelectedImage(image);
-        // setShowModal(true);
+
     };
 
     const closeModal = () => {
         setSelectedImage(null);
-        // setShowModal(false);
+
     };
 
     return (
@@ -82,9 +81,5 @@ export const App = () => {
 
 
 
-// https://api.unsplash.com/search/photos/?client_id=35P5CBZOhyM28nHIMdh9abUTsMDIQDZvb1HlYQhx9js&query=css
-// 35P5CBZOhyM28nHIMdh9abUTsMDIQDZvb1HlYQhx9js
-// Authorization: Client-ID YOUR_ACCESS_KEY
 
-// results
 
